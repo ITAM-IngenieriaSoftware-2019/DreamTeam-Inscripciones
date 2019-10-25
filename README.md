@@ -135,8 +135,7 @@
       
 
       ## 4.2 El  usuario podrá dar de baja una materia
-      * [feature] Baja de materia ([#33][i33])
-        [i33]: https://github.com/ITAM-IngenieriaSoftware-2019/DreamTeam-Inscripciones/issues/3
+      
       
       ## 4.3 El usuario ingresa al sistema de inscripciones
 
