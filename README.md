@@ -29,7 +29,7 @@
    4. Interfaces de comunicación
 4. **Funcionalidad del sistema**
    1. El usuario podrá dar de alta materias
-   2. El usuario podrá dar de baja una materia
+   2. Funcionalidad 2
    3. Funcionalidad 3
 5. **Requerimientos no funcionales**
    
@@ -126,26 +126,29 @@
       # 4. **Funcionalidad del sistema**
       ## 4.1 El usuario podrá dar de alta materias
       ### Descripción y prioridad
-      Este requerimiento de de prioridad alta, es importante que el usuario pueda inscribirse a la materia que deseé y de las cuales cumpla los requisitos para dar de alta, así como disminuir los errores posibles de usuario, como ingresar una materia dos veces.  Para este requerimiento tendría que poder ver el usuario las materias existentes, seleccionar la opción que le interese, y que se muestre el desplegado de horarios y profesores.
+      Este requerimiento es de prioridad alta, es importante que el usuario pueda inscribirse a la materia que desee y que cumpla los requermientos para darla de alta, así como disminuir los errores posibles de usuario, como ingresar una materia dos veces.  Para este requerimiento tendría que poder ver el usuario las materias existentes, seleccionar la opción que le interese, y que se muestre el desplegado de horarios y profesores.
       ### Secuencias de estímulo/respuesta
       Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de alta de materias, en está podrá ver una lista de todas las materias existentes, al seleccionar una se desplegará una lista de grupos, indicando en cada uno el profesor, horario, clave de la materia, nombre de la materia y estado del grupo, es decir, si está abierto, cerrado o en lista de espera. Al seleccionar una materia abierta o en lista de espera y dar clic en el botón "Alta de materia", se verificará que el usuario tiene los permisos y si los tiene se guardará el cambio en la base de datos. El usuaro podrá dar todo el tiempo clic en "vista de horario", donde se reglejará el nombre de las materias inscritas o en lista de espera. Y podrá el usuario cerrar la lista de grupos de una materia danod clic en "ver menos"
       ### Requerimientos Funcionales
-     1. Que sea fácil para el usuario regresar al listado de materias, ir a baja de materias, al horario, o cerrar sesión
+     1. Que sea fácil para el usuario regresar a el listado de materias, ir a baja de materias, al horario, o cerrar sesión
      2. Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos"
       
-
-      ## 4.2 El usuario podrá dar de baja una materia
       
-      ### Descripción y prioridad
-      Este requerimiento de prioridad media, es importante que si  el usuario  se equivocó o simplemente quiere dar de baja una materia pueda hacerlo 
-      ### Secuencias de estímulo/respuesta
-      Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de alta de materias, en caso de querer dar de baja una el usuario dará clic en la opción “baja de materias”, esta desplegará el listado de las materias inscritas con su nombre, su clave y la posibilidad de elegir varias materias que quiera dar de baja, al terminar de   seleccionar todas las materias que quiera dará clic en la opción “Dar de baja materias seleccionadas” , entonces se actualizará la base de datos y se podrá ver dicha actualización en la sección de horario, para ver solamente la página anterior de alta de materias, simplemente deberá seleccionar la opción “ver menos”.
-      ### Requerimientos Funcionales
-      1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos
-      2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento
-      3. Que sea fácil de entender las opciones de moverse entre páginas
+      ####REQ-3:El tiempo de actualización será lo suficientemente rápido, para que no haya problema de que un grupo se cerró, y si llega a pasar, se mandará mensaje a usuario de que no se pudo dar de alta la materia
 
+      ## 4.2 El  usuario podrá dar de baja una materia
+      
+      
       ## 4.3 El usuario ingresa al sistema de inscripciones
+      ###4.3.1 Descripción y prioridad
+      El usuario podrá acceder a la página de inicio, podrá escribir su usuario y contraseña, cambiar su contraseña, al validad la contraseña entrará automáticamente a la página de “alta de materias”. Este requerimiento de prioridad alta.
+      ###4.3.2Secuencias de estímulo/respuesta
+      El usuario ingresará a la página de inicio por medio de un link, en esta página podrá ver dos cuados para ingresar su matrícula y contraseña, además habrá una opción de “cambiar contraseña”, al escribir sus datos, el usuario dará clic a la opción “entrar”, que lo llevará a la página de “alta de materias”
+      ###4.3.3Requerimientos Funcionales
+      ####REQ-1:  El usuario podrá cerrar sesión y regresar a la página de inicio
+      ####REQ-2: El usuario podrá restablecer su contraseña también  cuando la haya olvidado
+      ####REQ-3: La sesión se cerrará automáticamente a los 10 minutos de inactividad por seguridad
+      ####REQ-4: si el usuario no puede entrar por error de contraseña o usuario, se indicará en un mensaje que hubo un error y se mantendrá en la página de inicio
 
 
       # 5. Requerimientos no funcionales
