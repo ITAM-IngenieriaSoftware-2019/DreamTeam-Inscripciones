@@ -5,7 +5,7 @@
 + Cecilia Vásquez Perez- 150482 
 + Diego Villalvazo Sulzer - 155844 
 + Ana Carolina Sandoval Mejía - 152808
-+ Stephanie
++ Stephanie Lizeth Malvaes Diaz -135515
 #### DreamTeam
 24 de octubre de 2019
 # Tabla de contenidos
@@ -124,9 +124,18 @@
       Los datos solamente pueden ser accesados si el alumno o usuario introduce introduce las credenciales correctas para así garantizar la seguridad del sistema. Además, los datos enviados mediante los protocolos de Internet son todos encriptados para evitar robo de información. Finalmente, el sistema es resistente a ataques DoS.
       
       # 4. **Funcionalidad del sistema**
-      ## 4.1 Funcionalidad 1
-      ## 4.2 Funcionalidad 2
-      ## 4.3 Funcionalidad 3
+      ## 4.1 El usuario podrá dar de alta materias
+      ###4.1.1 Descripción y prioridad
+      Este requerimiento de de prioridad alta, es importante que el usuario pueda inscribirse a la materia que desee y que cumpla los requermientos para darla de alta, así como disminuir los errores posibles de usuario, como ingresar una materia dos veces.  Para este requerimiento tendría que poder ver el usuario las materias existentes, seleccionar la opción que le interese, y que se muestre el desplegado de horarios y profesores.
+      ###Secuencias de estímulo/respuesta
+      Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de alta de materias, en está podrá ver una lista de todas las materias existentes, al seleccionar una se desplegará una lista de grupos, indicando en cada uno el profesor, horario, clave de la materia, nombre de la materia y estado del grupo, es decir, si está abierto, cerrado o en lista de espera. Al seleccionar una materia abierta o en lista de espera y dar clic en el botón "Alta de materia", se verificará que el usuario tiene los permisos y si los tiene se guardará el cambio en la base de datos. El usuaro podrá dar todo el tiempo clic en "vista de horario", donde se reglejará el nombre de las materias inscritas o en lista de espera. Y podrá el usuario cerrar la lista de grupos de una materia danod clic en "ver menos"
+      ###Requerimientos Funcionales
+      ####REQ-1: Que sea fácil para el usuario regresar a el listado de materias, ir a baja de materias, al horario, o cerrar sesión
+      ####REQ-2: Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos"
+      
+
+      ## 4.2 El  usuario podrá dar de baja una materia
+      ## 4.3 El usuario ingresa al sistema de inscripciones
 
 
       # 5. Requerimientos no funcionales
