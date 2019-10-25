@@ -29,7 +29,7 @@
    4. Interfaces de comunicación
 4. **Funcionalidad del sistema**
    1. El usuario podrá dar de alta materias
-   2. Funcionalidad 2
+   2. El usuario podrá dar de baja una materia
    3. Funcionalidad 3
 5. **Requerimientos no funcionales**
    
@@ -134,7 +134,7 @@
      2. Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos"
       
 
-      ## 4.2 El  usuario podrá dar de baja una materia
+      ## 4.2 El usuario podrá dar de baja una materia
       
       ### Descripción y prioridad
       Este requerimiento de prioridad media, es importante que si  el usuario  se equivocó o simplemente quiere dar de baja una materia pueda hacerlo 
