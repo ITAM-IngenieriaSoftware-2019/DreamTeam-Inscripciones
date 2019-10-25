@@ -32,7 +32,10 @@
    2. El Usuario podrá dar de baja una materia
    3. El usuario ingresa al sistema de inscripcione
 5. **Requerimientos no funcionales**
-   
+   1. Requerimientos de rendimiento
+   2. Requerimientos de seguridad
+   3. Requerimientos de fiabilidad
+
    # 1. Introducción
    ## 1.1 Propósito Convención.
     El propósito de este documento es proporcionar una descripción detallada de los requisitos para el sistema de inscripciones del ITAM. 
@@ -130,22 +133,22 @@
       ### Secuencias de estímulo/respuesta
       Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de alta de materias, en está podrá ver una lista de todas las materias existentes, al seleccionar una se desplegará una lista de grupos, indicando en cada uno el profesor, horario, clave de la materia, nombre de la materia y estado del grupo, es decir, si está abierto, cerrado o en lista de espera. Al seleccionar una materia abierta o en lista de espera y dar clic en el botón "Alta de materia", se verificará que el usuario tiene los permisos y si los tiene se guardará el cambio en la base de datos. El usuaro podrá dar todo el tiempo clic en "vista de horario", donde se reglejará el nombre de las materias inscritas o en lista de espera. Y podrá el usuario cerrar la lista de grupos de una materia danod clic en "ver menos".
       ### Requerimientos Funcionales
-    1. Que sea fácil para el usuario regresar a el listado de materias, ir a baja de materias, al horario, o cerrar sesión.
-    2. Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos".
-    3. El tiempo de actualización será lo suficientemente rápido, para que no haya problema de que un grupo se cerró, y si llega a pasar, se mandará mensaje a usuario de que no se pudo dar de alta la materia.
+  1. Que sea fácil para el usuario regresar a el listado de materias, ir a baja de materias, al horario, o cerrar sesión.
+  2. Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos".
+  3. El tiempo de actualización será lo suficientemente rápido, para que no haya problema de que un grupo se cerró, y si llega a pasar, se mandará mensaje a usuario de que no se pudo dar de alta la materia.
     
-    [Ver feature 1](/../../issues/4)
+   [Ver feature 1](/../../issues/4)
 
-      ## 4.2 El  usuario podrá dar de baja una materia
-      Este requerimiento de prioridad media, es importante que si el usuario se equivocó o simplemente quiere dar de baja una materia pueda hacerlo.
+   ## 4.2 El  usuario podrá dar de baja una materia
+   Este requerimiento de prioridad media, es importante que si el usuario se equivocó o simplemente quiere dar de baja una materia pueda hacerlo.
 
-      ### Secuencias de estímulo/respuesta
-      Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de         alta de materias, en caso de querer dar de baja una el usuario dará clic en la opción “baja de materias”, esta desplegará el             listado de las materias inscritas con su nombre, su clave y la posibilidad de elegir varias materias que quiera dar de baja, al         terminar de seleccionar todas las materias que quiera dará clic en la opción “Dar de baja materias seleccionadas” , entonces se         actualizará la base de datos y se podrá ver dicha actualización en la sección de horario, para ver solamente la página anterior         de alta de materias, simplemente deberá seleccionar la opción “ver menos”.
+   ### Secuencias de estímulo/respuesta
+   Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de         alta de materias, en caso de querer dar de baja una el usuario dará clic en la opción “baja de materias”, esta desplegará el             listado de las materias inscritas con su nombre, su clave y la posibilidad de elegir varias materias que quiera dar de baja, al         terminar de seleccionar todas las materias que quiera dará clic en la opción “Dar de baja materias seleccionadas” , entonces se         actualizará la base de datos y se podrá ver dicha actualización en la sección de horario, para ver solamente la página anterior         de alta de materias, simplemente deberá seleccionar la opción “ver menos”.
 
-      ### Requerimientos Funcionales
-      1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos.
-      2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento.
-      3. Que sea fácil de entender las opciones de moverse entre páginas.
+   ### Requerimientos Funcionales
+ 1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos.
+ 2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento.
+ 3. Que sea fácil de entender las opciones de moverse entre páginas.
 
 [Ver feature 2](/../../issues/3)
    
