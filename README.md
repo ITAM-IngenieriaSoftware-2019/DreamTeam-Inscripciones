@@ -140,25 +140,27 @@
       Este requerimiento de prioridad media, es importante que si el usuario se equivocó o simplemente quiere dar de baja una materia pueda hacerlo.
 
       ### Secuencias de estímulo/respuesta
-      Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de         alta de materias, en caso de querer dar de baja una el usuario dará clic en la opción “baja de materias”, esta desplegará el             listado de las materias inscritas con su nombre, su clave y la posibilidad de elegir varias materias que quiera dar de baja, al terminar de seleccionar todas las materias que quiera dará clic en la opción “Dar de baja materias seleccionadas” , entonces se actualizará la base de datos y se podrá ver dicha actualización en la sección de horario, para ver solamente la página anterior de alta de materias, simplemente deberá seleccionar la opción “ver menos”.
+      Después de ingresar al sistema de inscripciones con su número de matrícula, el usuario ingresará automáticamente a la página de         alta de materias, en caso de querer dar de baja una el usuario dará clic en la opción “baja de materias”, esta desplegará el             listado de las materias inscritas con su nombre, su clave y la posibilidad de elegir varias materias que quiera dar de baja, al         terminar de seleccionar todas las materias que quiera dará clic en la opción “Dar de baja materias seleccionadas” , entonces se         actualizará la base de datos y se podrá ver dicha actualización en la sección de horario, para ver solamente la página anterior         de alta de materias, simplemente deberá seleccionar la opción “ver menos”.
 
-### Requerimientos Funcionales
-1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos.
-2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento.
-3. Que sea fácil de entender las opciones de moverse entre páginas.
+      ### Requerimientos Funcionales
+      1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos.
+      2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento.
+      3. Que sea fácil de entender las opciones de moverse entre páginas.
+
 [Ver feature 2](/../../issues/3)
    
    
    ## 4.3 El usuario ingresa al sistema de inscripciones
    ### Descripción y prioridad
-   El usuario podrá acceder a la página de inicio, podrá escribir su usuario y contraseña, cambiar su contraseña, al validad la contraseña entrará automáticamente a la página de “alta de materias”. Este requerimiento de prioridad alta.
+   El usuario podrá acceder a la página de inicio, podrá escribir su usuario y contraseña, cambiar su contraseña, al validad la           contraseña entrará automáticamente a la página de “alta de materias”. Este requerimiento de prioridad alta.
    ### Secuencias de estímulo/respuesta
-   El usuario ingresará a la página de inicio por medio de un link, en esta página podrá ver dos cuados para ingresar su matrícula y contraseña, además habrá una opción de “cambiar contraseña”, al escribir sus datos, el usuario dará clic a la opción “entrar”, que lo llevará a la página de “alta de materias”.
+   El usuario ingresará a la página de inicio por medio de un link, en esta página podrá ver dos cuados para ingresar su matrícula y        contraseña, además habrá una opción de “cambiar contraseña”, al escribir sus datos, el usuario dará clic a la opción “entrar”, que      lo llevará a la página de “alta de materias”.
    ### Requerimientos Funcionales
  1. El usuario podrá cerrar sesión y regresar a la página de inicio.
  2. El usuario podrá restablecer su contraseña también  cuando la haya olvidado.
  3. La sesión se cerrará automáticamente a los 10 minutos de inactividad por seguridad.
  4. si el usuario no puede entrar por error de contraseña o usuario, se indicará en un mensaje que hubo un error y se mantendrá en la página de inicio.
+ 
 [Ver feature 3](/../../issues/1)
 
 # 5. Requerimientos no funcionales
