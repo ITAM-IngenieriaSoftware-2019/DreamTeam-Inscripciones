@@ -29,8 +29,8 @@
    4. Interfaces de comunicación
 4. **Funcionalidad del sistema**
    1. El usuario podrá dar de alta materias
-   2. Funcionalidad 2
-   3. Funcionalidad 3
+   2. El Usuario podrá dar de baja una materia
+   3. El usuario ingresa al sistema de inscripcione
 5. **Requerimientos no funcionales**
    
    # 1. Introducción
@@ -134,7 +134,7 @@
     2. Que si no se puede ingresar la materia se regrese a la página anterior y aparezca un mensaje de que "no cumple con prerrequisitos".
     3. El tiempo de actualización será lo suficientemente rápido, para que no haya problema de que un grupo se cerró, y si llega a pasar, se mandará mensaje a usuario de que no se pudo dar de alta la materia.
     
-    [Ver feature](/../../issues/4)
+    [Ver feature 1](/../../issues/4)
 
       ## 4.2 El  usuario podrá dar de baja una materia
       Este requerimiento de prioridad media, es importante que si el usuario se equivocó o simplemente quiere dar de baja una materia pueda hacerlo.
@@ -146,25 +146,27 @@
 1. Que se pregunte al usuario si está seguro de quererlas dar de baja dichas materias, antes de guardarlo en la base de datos.
 2. Que se actualice la información antes de que quiera hacer el usuario otro movimiento.
 3. Que sea fácil de entender las opciones de moverse entre páginas.
-      
-      ## 4.3 El usuario ingresa al sistema de inscripciones
-      ### Descripción y prioridad
-      El usuario podrá acceder a la página de inicio, podrá escribir su usuario y contraseña, cambiar su contraseña, al validad la contraseña entrará automáticamente a la página de “alta de materias”. Este requerimiento de prioridad alta.
-      ### Secuencias de estímulo/respuesta
-      El usuario ingresará a la página de inicio por medio de un link, en esta página podrá ver dos cuados para ingresar su matrícula y contraseña, además habrá una opción de “cambiar contraseña”, al escribir sus datos, el usuario dará clic a la opción “entrar”, que lo llevará a la página de “alta de materias”.
-      ### Requerimientos Funcionales
+[Ver feature 2](/../../issues/3)
+   
+   
+   ## 4.3 El usuario ingresa al sistema de inscripciones
+   ### Descripción y prioridad
+   El usuario podrá acceder a la página de inicio, podrá escribir su usuario y contraseña, cambiar su contraseña, al validad la contraseña entrará automáticamente a la página de “alta de materias”. Este requerimiento de prioridad alta.
+   ### Secuencias de estímulo/respuesta
+   El usuario ingresará a la página de inicio por medio de un link, en esta página podrá ver dos cuados para ingresar su matrícula y contraseña, además habrá una opción de “cambiar contraseña”, al escribir sus datos, el usuario dará clic a la opción “entrar”, que lo llevará a la página de “alta de materias”.
+   ### Requerimientos Funcionales
  1. El usuario podrá cerrar sesión y regresar a la página de inicio.
  2. El usuario podrá restablecer su contraseña también  cuando la haya olvidado.
  3. La sesión se cerrará automáticamente a los 10 minutos de inactividad por seguridad.
  4. si el usuario no puede entrar por error de contraseña o usuario, se indicará en un mensaje que hubo un error y se mantendrá en la página de inicio.
+[Ver feature 3](/../../issues/1)
 
-
-      # 5. Requerimientos no funcionales
-      ## 5.1 Requerimientos de rendimiento
-      El sistema debe garantizar el dar respuesta a las consultas en menos de 5 segundos. En especial en el día de inscripciones.
-      ## 5.2 Requerimientos de seguridad
-      - El sistema debe ser resistente a ataques, por ejemplo, D-DOS. Para así garantizar fiabilidad y rendimiento al usuario.
-      - El sistema debe cuidar la confidencialidad de los usuarios y la integridad de los datos, esto se puede hacer mediante la encriptación de los datos enviados y recibidos por el sistema.
-      ## 5.3 Requerimientos de fiabilidad
-      - El sistema debe garantizar tener pocos incidentes de alta prioridad, por ejemplo, teniendo un sistema alterno que sirve como DR (Disaster Recovery) en caso de algún problema
-      - El sistema debe garantizar ser resistente a un fuerte uso del sistema, por ejemplo, en día de inscripciones.
+# 5. Requerimientos no funcionales
+   ## 5.1 Requerimientos de rendimiento
+   El sistema debe garantizar el dar respuesta a las consultas en menos de 5 segundos. En especial en el día de inscripciones.
+   ## 5.2 Requerimientos de seguridad
+   - El sistema debe ser resistente a ataques, por ejemplo, D-DOS. Para así garantizar fiabilidad y rendimiento al usuario.
+   - El sistema debe cuidar la confidencialidad de los usuarios y la integridad de los datos, esto se puede hacer mediante la encriptación de los datos enviados y recibidos por el sistema.
+   ## 5.3 Requerimientos de fiabilidad
+   - El sistema debe garantizar tener pocos incidentes de alta prioridad, por ejemplo, teniendo un sistema alterno que sirve como DR (Disaster Recovery) en caso de algún problema
+   - El sistema debe garantizar ser resistente a un fuerte uso del sistema, por ejemplo, en día de inscripciones.
